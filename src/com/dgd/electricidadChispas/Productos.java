@@ -1,0 +1,59 @@
+package com.dgd.electricidadChispas;
+
+public class Productos {
+
+    private Integer codigoProducto;
+    private String nombre;
+    private String marca;
+    private String modelo;
+    private Integer precio;
+    private Integer tipoIva;
+
+    public Integer getCodigoProducto() {
+        return codigoProducto;
+    }
+
+    public void setCodigoProducto(Integer codigoProducto) {
+        this.codigoProducto = codigoProducto;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public Integer getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Integer precio) {
+        this.precio = precio;
+    }
+
+    public Integer getTipoIva() {
+        return tipoIva;
+    }
+
+    public void setTipoIva(Integer tipoIva) {
+        this.tipoIva = tipoIva;
+    }
+}
