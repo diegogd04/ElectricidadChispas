@@ -1,6 +1,6 @@
 package com.dgd.electricidadChispas;
 
-public class Sociedades {
+public class Sociedades implements Cliente{
 
     private Integer codigoCliente;
     private String razonSocial;
@@ -10,14 +10,6 @@ public class Sociedades {
     private String provincia;
     private String email;
     private String telefono;
-
-    public Integer getCodigoCliente() {
-        return codigoCliente;
-    }
-
-    public void setCodigoCliente(Integer codigoCliente) {
-        this.codigoCliente = codigoCliente;
-    }
 
     public String getRazonSocial() {
         return razonSocial;
@@ -35,43 +27,63 @@ public class Sociedades {
         this.cif = cif;
     }
 
+    @Override
+    public Integer getCodigoCliente() {
+        return null;
+    }
+
+    @Override
+    public void setCodigoCliente(Integer codigoCliente) {
+
+    }
+
+    @Override
     public String getDireccionPostal() {
-        return direccionPostal;
+        return null;
     }
 
+    @Override
     public void setDireccionPostal(String direccionPostal) {
-        this.direccionPostal = direccionPostal;
+
     }
 
+    @Override
     public String getPoblacion() {
-        return poblacion;
+        return null;
     }
 
+    @Override
     public void setPoblacion(String poblacion) {
-        this.poblacion = poblacion;
+
     }
 
+    @Override
     public String getProvincia() {
-        return provincia;
+        return null;
     }
 
+    @Override
     public void setProvincia(String provincia) {
-        this.provincia = provincia;
+
     }
 
+    @Override
     public String getEmail() {
-        return email;
+        return null;
     }
 
+    @Override
     public void setEmail(String email) {
-        this.email = email;
+
     }
 
+    @Override
     public String getTelefono() {
-        return telefono;
+        return null;
     }
 
+    @Override
     public void setTelefono(String telefono) {
-        this.telefono = telefono;
+
     }
 }
