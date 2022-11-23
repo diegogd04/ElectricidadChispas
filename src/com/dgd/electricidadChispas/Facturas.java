@@ -6,6 +6,8 @@ public class Facturas {
     private String fecha;
     private Integer baseImponible;
     private Integer total;
+    private Cliente cliente;
+    private Venta venta;
 
     public Integer getCodigoFactura() {
         return codigoFactura;
@@ -37,5 +39,19 @@ public class Facturas {
 
     public void setTotal(Integer total) {
         this.total = total;
+    }
+    public Cliente getCliente() {
+        return cliente;
+    }
+    public void setCliente(Cliente cliente) {
+        this.cliente = cliente;
+    }
+
+    public Venta getVenta() {
+        return venta;
+    }
+
+    public void setVenta(Venta venta) {
+        this.venta = venta;
     }
 }
