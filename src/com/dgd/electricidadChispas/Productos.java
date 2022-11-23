@@ -1,6 +1,6 @@
 package com.dgd.electricidadChispas;
 
-public class Productos {
+public class Productos implements Venta{
 
     private Integer codigoProducto;
     private String nombre;
@@ -41,19 +41,23 @@ public class Productos {
         this.modelo = modelo;
     }
 
+    @Override
     public Integer getPrecio() {
-        return precio;
+        return null;
     }
 
+    @Override
     public void setPrecio(Integer precio) {
-        this.precio = precio;
+
     }
 
+    @Override
     public Integer getTipoIva() {
-        return tipoIva;
+        return null;
     }
 
+    @Override
     public void setTipoIva(Integer tipoIva) {
-        this.tipoIva = tipoIva;
+
     }
 }
