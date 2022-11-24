@@ -38,7 +38,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public Integer getCodigoCliente() {
-        return null;
+        return codigoCliente;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public String getDireccionPostal() {
-        return null;
+        return direccionPostal;
     }
 
     @Override
@@ -58,7 +58,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public String getPoblacion() {
-        return null;
+        return poblacion;
     }
 
     @Override
@@ -68,7 +68,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public String getProvincia() {
-        return null;
+        return provincia;
     }
 
     @Override
@@ -78,7 +78,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public String getEmail() {
-        return null;
+        return email;
     }
 
     @Override
@@ -88,7 +88,7 @@ public class Autonomos implements Cliente{
 
     @Override
     public String getTelefono() {
-        return null;
+        return telefono;
     }
 
     @Override
