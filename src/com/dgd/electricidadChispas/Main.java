@@ -1,5 +1,7 @@
 package com.dgd.electricidadChispas;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -155,13 +157,28 @@ public class Main {
                     System.out.println("~INTRODUCE UNA FACTURA~");
                     System.out.println("-----------------------");
 
-                    String fechaFactura;
+                    String fechaFactura, cliente, autonomo, sociedad;
                     Integer baseImponibleFactura, totalFactura;
 
                     Facturas facturas = new Facturas();
                     facturas.setCodigoFactura(1);
                     System.out.println("Introduce un cliente:");
-
+                    System.out.println("Indica el tipo de cliente (autonomo o sociedad): ");
+                    cliente = entrada.nextLine();
+                    switch (cliente){
+                        case "autonomo":
+                            System.out.println("Introduce el nombre del autonomo:");
+                            autonomo = entrada.nextLine();
+                            break;
+                        case "sociedad":
+                            System.out.println("Introduce la razon social de la sociedad:");
+                            sociedad = entrada.nextLine();
+                            break;
+                        default:
+                            System.out.println("Introduce un tipo de cliente valido (autonomo o sociedad)");
+                            cliente = entrada.nextLine();
+                            break;
+                    }
                     System.out.println("Introduce una venta:");
 
                     System.out.println("Introduce la fecha:");
