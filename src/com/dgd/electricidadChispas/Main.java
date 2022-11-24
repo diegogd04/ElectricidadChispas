@@ -166,10 +166,12 @@ public class Main {
 
                     System.out.println("Introduce la fecha:");
                     facturas.setFecha(fechaFactura = entrada.nextLine());
-                    System.out.println("Introduce la base imponible:");
-                    facturas.setBaseImponible(baseImponibleFactura = entrada.nextInt());
-                    System.out.println("Introduce el total de la factura:");
-                    facturas.setTotal(totalFactura = entrada.nextInt());
+                    System.out.println("Obteniendo la base imponible...");
+                    //facturas.setBaseImponible();
+                    System.out.println("");
+                    System.out.println("Obteniendo el total de la factura...");
+                    //facturas.setTotal();
+                    System.out.println("");
                     System.out.println("~FACTURA INTRODUCIDA~");
                     System.out.println("----------------------");
                     System.out.println("----------------------");
