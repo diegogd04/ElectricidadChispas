@@ -12,7 +12,7 @@ public class Main {
         String opcion;
 
         while (!salir){
-            System.out.println("¿Que quiere introducir? (autonomo, sociedad, producto, servicio, factura, salir)");
+            System.out.println("¿Que quiere introducir? (autonomo, sociedad, producto, servicio, factura o salir)");
             opcion = entrada.nextLine();
             System.out.println ("");
 
@@ -90,8 +90,25 @@ public class Main {
                     productos.setModelo(modeloProducto = entrada.nextLine());
                     System.out.println("Introduce el precio:");
                     productos.setPrecio(precioProducto = entrada.nextInt());
-                    System.out.println("Introduce el tipo de iva:");
-                    productos.setTipoIva(tipoIvaProducto = entrada.nextInt());
+                    System.out.println("Introduce el tipo de iva: (0, 4, 10 o 21)");
+                    tipoIvaProducto = entrada.nextInt();
+                    switch (tipoIvaProducto){
+                        case 0:
+                            productos.setTipoIva(tipoIvaProducto = entrada.nextInt());
+                            break;
+                        case 4:
+                            productos.setTipoIva(tipoIvaProducto = entrada.nextInt());
+                            break;
+                        case 10:
+                            productos.setTipoIva(tipoIvaProducto = entrada.nextInt());
+                            break;
+                        case 21:
+                            productos.setTipoIva(tipoIvaProducto = entrada.nextInt());
+                            break;
+                        default:
+                            System.out.println("Error: el tipo de iva introducido no es correcto. Introduce uno de los siguientes: 0, 4, 10 o 21.");
+                            tipoIvaProducto = entrada.nextInt();
+                    }
                     System.out.println("~PRODUCTO INTRODUCIDO~");
                     System.out.println("----------------------");
                     System.out.println("----------------------");
@@ -110,9 +127,26 @@ public class Main {
                     servicios.setNombre(nombreServicio = entrada.nextLine());
                     System.out.println("Introduce el precio:");
                     servicios.setPrecio(precioServicio = entrada.nextInt());
-                    System.out.println("Introduce el tipo de iva:");
-                    servicios.setTipoIva(tipoIvaServicio = entrada.nextInt());
-                    System.out.println("~SERVIVIO INTRODUCIDO~");
+                    System.out.println("Introduce el tipo de iva:  (0, 4, 10 o 21)");
+                    tipoIvaServicio = entrada.nextInt();
+                    switch (tipoIvaServicio) {
+                        case 0:
+                            servicios.setTipoIva(tipoIvaServicio = entrada.nextInt());
+                            break;
+                        case 4:
+                            servicios.setTipoIva(tipoIvaServicio = entrada.nextInt());
+                            break;
+                        case 10:
+                            servicios.setTipoIva(tipoIvaServicio = entrada.nextInt());
+                            break;
+                        case 21:
+                            servicios.setTipoIva(tipoIvaServicio = entrada.nextInt());
+                            break;
+                        default:
+                            System.out.println("Error: el tipo de iva introducido no es correcto. Introduce uno de los siguientes: 0, 4, 10 o 21.");
+                            tipoIvaServicio = entrada.nextInt();
+                    }
+                    System.out.println("~SERVICIO INTRODUCIDO~");
                     System.out.println("----------------------");
                     System.out.println("----------------------");
                     System.out.println("");

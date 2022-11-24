@@ -7,7 +7,7 @@ public class Productos implements Venta{
     private String marca;
     private String modelo;
     private Integer precio;
-    private Integer tipoIva;
+    private String tipoIva;
 
     public Integer getCodigoProducto() {
         return codigoProducto;
