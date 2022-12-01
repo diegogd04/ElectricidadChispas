@@ -1,4 +1,6 @@
-package com.dgd.electricidadChispas;
+package com.dgd.electricidadChispas.presentation;
+
+import com.dgd.electricidadChispas.domain.models.*;
 
 import java.util.Scanner;
 
@@ -39,12 +41,14 @@ public class Main {
         productos.setPrecio(42000);
         productos.setTipoIva(21);
 
-        productos.setCodigoProducto(2);
-        productos.setNombre("Moto");
-        productos.setMarca("Ducati");
-        productos.setModelo("Panigale V4");
-        productos.setPrecio(26000);
-        productos.setTipoIva(21);
+        Productos productos2 = new Productos();
+
+        productos2.setCodigoProducto(2);
+        productos2.setNombre("Moto");
+        productos2.setMarca("Ducati");
+        productos2.setModelo("Panigale V4");
+        productos2.setPrecio(26000);
+        productos2.setTipoIva(21);
 
         Servicios servicios = new Servicios();
         servicios.setCodigoServicio(1);

@@ -1,4 +1,4 @@
-package com.dgd.electricidadChispas;
+package com.dgd.electricidadChispas.domain.models;
 
 public class Productos implements Venta{
 
@@ -48,7 +48,7 @@ public class Productos implements Venta{
 
     @Override
     public void setPrecio(Integer precio) {
-
+        this.precio = precio;
     }
 
     @Override

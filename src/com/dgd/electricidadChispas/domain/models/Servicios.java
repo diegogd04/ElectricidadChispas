@@ -1,4 +1,4 @@
-package com.dgd.electricidadChispas;
+package com.dgd.electricidadChispas.domain.models;
 
 public class Servicios implements Venta{
 
