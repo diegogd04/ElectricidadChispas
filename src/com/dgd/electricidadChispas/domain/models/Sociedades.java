@@ -34,7 +34,7 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setCodigoCliente(Integer codigoCliente) {
-
+        this.codigoCliente = codigoCliente;
     }
 
     @Override
@@ -44,7 +44,7 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setDireccionPostal(String direccionPostal) {
-
+        this.direccionPostal = direccionPostal;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setPoblacion(String poblacion) {
-
+        this.poblacion = poblacion;
     }
 
     @Override
@@ -64,7 +64,7 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setProvincia(String provincia) {
-
+        this.provincia = provincia;
     }
 
     @Override
@@ -74,7 +74,7 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setEmail(String email) {
-
+        this.email = email;
     }
 
     @Override
@@ -84,6 +84,6 @@ public class Sociedades implements Cliente{
 
     @Override
     public void setTelefono(String telefono) {
-
+        this.telefono = telefono;
     }
 }

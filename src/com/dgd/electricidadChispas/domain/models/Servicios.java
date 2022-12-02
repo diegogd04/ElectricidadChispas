@@ -30,7 +30,7 @@ public class Servicios implements Venta{
 
     @Override
     public void setPrecio(Integer precio) {
-
+        this.precio = precio;
     }
 
     @Override
@@ -40,6 +40,6 @@ public class Servicios implements Venta{
 
     @Override
     public void setTipoIva(Integer tipoIva) {
-
+        this.tipoIva = tipoIva;
     }
 }

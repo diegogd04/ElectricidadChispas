@@ -42,7 +42,6 @@ public class Main {
         productos.setTipoIva(21);
 
         Productos productos2 = new Productos();
-
         productos2.setCodigoProducto(2);
         productos2.setNombre("Moto");
         productos2.setMarca("Ducati");
@@ -56,18 +55,19 @@ public class Main {
         servicios.setPrecio(50);
         servicios.setTipoIva(21);
 
-        servicios.setCodigoServicio(2);
-        servicios.setNombre("Mantenimiento");
-        servicios.setPrecio(200);
-        servicios.setTipoIva(21);
+        Servicios servicios2 = new Servicios();
+        servicios2.setCodigoServicio(2);
+        servicios2.setNombre("Mantenimiento");
+        servicios2.setPrecio(200);
+        servicios2.setTipoIva(21);
 
         Facturas facturas = new Facturas();
         facturas.setCodigoFactura(1);
         facturas.setFecha("08/11/2022");
         facturas.setCliente(facturas.getCliente());
         facturas.setVenta(facturas.getVenta());
-        facturas.setBaseImponible(productos.getPrecio() + servicios.getPrecio());
-        facturas.setTotal(((productos.getPrecio() * productos.getTipoIva()) / 100) + ((servicios.getPrecio() * servicios.getTipoIva()) / 100));
+        facturas.setBaseImponible(42000 + 50);
+        facturas.setTotal(((42000 * 21) / 100) + ((50 * 21) / 100));
 
         //Impresion de factura.
 

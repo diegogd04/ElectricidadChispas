@@ -7,7 +7,7 @@ public class Productos implements Venta{
     private String marca;
     private String modelo;
     private Integer precio;
-    private String tipoIva;
+    private Integer tipoIva;
 
     public Integer getCodigoProducto() {
         return codigoProducto;
@@ -58,6 +58,6 @@ public class Productos implements Venta{
 
     @Override
     public void setTipoIva(Integer tipoIva) {
-
+        this.tipoIva = tipoIva;
     }
 }
