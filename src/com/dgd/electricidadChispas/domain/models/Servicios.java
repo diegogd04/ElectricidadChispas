@@ -2,6 +2,7 @@ package com.dgd.electricidadChispas.domain.models;
 
 public class Servicios implements Venta{
 
+    private Integer codigoVenta;
     private Integer codigoServicio;
     private String nombre;
     private Integer precio;
@@ -21,6 +22,16 @@ public class Servicios implements Venta{
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public Integer getCodigoVenta() {
+        return null;
+    }
+
+    @Override
+    public void setCodigoVenta(Integer codigoVenta) {
+        this.codigoVenta = codigoVenta;
     }
 
     @Override

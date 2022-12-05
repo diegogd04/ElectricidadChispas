@@ -94,6 +94,37 @@ public class Main {
         servicios2.setPrecio(200);
         servicios2.setTipoIva(21);
 
+        VentaDataStore ventaDataStore = new MemVentaDataStore();
+
+        AnadirVentaUseCase anadirVentaUseCase = new AnadirVentaUseCase(ventaDataStore);
+        anadirVentaUseCase.execute(productos);
+        anadirVentaUseCase.execute(servicios);
+
+        ObtenerVentaUseCase obtenerVentaUseCase = new ObtenerVentaUseCase(ventaDataStore);
+        List<Venta> ventas = obtenerVentaUseCase.execute();
+        for (int i = 0; i < ventas.size(); i++) {
+            printVenta(ventas.get(i));
+        }
+
+        System.out.println("----- Eliminando ------");
+
+        BorrarVentaUseCase borrarVentaUseCase = new BorrarVentaUseCase(ventaDataStore);
+        borrarVentaUseCase.execute(productos);
+        List<Venta> ventas2 = obtenerVentaUseCase.execute();
+        for (int i = 0; i < ventas2.size(); i++) {
+            printVenta(ventas2.get(i));
+        }
+
+        System.out.println("----- Modificando el Servicio ------");
+
+        servicios.setPrecio(150);
+        ModificarVentaUseCase modificarVentaUseCase = new ModificarVentaUseCase(ventaDataStore);
+        modificarVentaUseCase.execute(servicios);
+        List<Venta> ventas3 = obtenerVentaUseCase.execute();
+        for (int i = 0; i < ventas3.size(); i++) {
+            printVenta(ventas3.get(i));
+        }
+
         Facturas facturas = new Facturas();
         facturas.setCodigoFactura(1);
         facturas.setFecha("08/11/2022");
@@ -125,5 +156,8 @@ public class Main {
     }
     public static void printCliente(Cliente cliente) {
         System.out.println("Codigo: " + cliente.getCodigoCliente() + " Email: " + cliente.getEmail());
+    }
+    public static void printVenta(Venta venta) {
+        System.out.println("Codigo: " + venta.getCodigoVenta() + " Email: " + venta.getPrecio());
     }
 }
