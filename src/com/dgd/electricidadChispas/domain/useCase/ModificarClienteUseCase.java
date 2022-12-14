@@ -12,6 +12,6 @@ public class ModificarClienteUseCase {
     }
 
     public void execute(Cliente cliente) {
-        clienteDataStore.ModificarCliente(cliente);
+        clienteDataStore.modificarCliente(cliente);
     }
 }

@@ -1,7 +1,6 @@
 package com.dgd.electricidadChispas.data;
 
 import com.dgd.electricidadChispas.domain.models.Venta;
-
 import java.util.List;
 
 public interface VentaDataStore {

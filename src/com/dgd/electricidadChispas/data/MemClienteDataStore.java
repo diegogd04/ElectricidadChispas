@@ -20,7 +20,7 @@ public class MemClienteDataStore implements ClienteDataStore{
     }
 
     @Override
-    public void ModificarCliente(Cliente cliente) {
+    public void modificarCliente(Cliente cliente) {
         dataStore.replace(cliente.getCodigoCliente(), cliente);
     }
 

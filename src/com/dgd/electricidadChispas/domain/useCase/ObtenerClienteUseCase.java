@@ -13,6 +13,6 @@ public class ObtenerClienteUseCase {
     }
 
     public List<Cliente> execute(){
-        return ClienteDataStore.ObtenerTodosClientes();
+        return clienteDataStore.ObtenerTodosClientes();
     }
 }

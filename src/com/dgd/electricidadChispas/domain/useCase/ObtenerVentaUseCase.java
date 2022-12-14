@@ -14,6 +14,6 @@ public class ObtenerVentaUseCase {
     }
 
     public List<Venta> execute(){
-        return VentaDataStore.ObtenerTodasVentas();
+        return ventaDataStore.ObtenerTodasVentas();
     }
 }
